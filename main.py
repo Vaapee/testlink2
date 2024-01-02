@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-response = requests.get('https://api.github.com', headers={'Accept': 'application/vnd.github+json'}, timeout=5, allow_redirects=False, verify=False, stream=True, cert=None, auth=None, cookies=None, hooks=None, json=None, files=None, data=None, proxies=None,
+response = requests.get('https://api.github.com', headers={'Accept': 'application/vnd.github+json'}, timeout=5, allow_redirects=False, stream=True, cert=None, auth=None, cookies=None, hooks=None, json=None, files=None, data=None, proxies=None,
                          hooks=None, stream=False, verify=True, cert=None, data=None)
 
 print(response.text)
